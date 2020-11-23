@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exercitii2Intermediar {
+    public static void main (String[]args) {
+
+        //Definirea valori introduse de la tastatura
+        Scanner val = new Scanner(System.in);
+        System.out.println("Introdu o valoare multiplu de 10: ");
+        int i = val.nextInt();
+
+        int nr;
+        int j = 3;  // definirea pasului
+        int controlNrPar = 0;   // definirea contorului
+
+        for (nr = 0; nr <= i; nr++) {
+            if (nr % 2 == 0){   // definirea conditiei de divizare pentru a obtine un numar par
+                controlNrPar++;
+                while(controlNrPar == j){   // conditia de afisare din 3 in 3 a numarului par
+                    System.out.println(nr);
+                    j = j +3;
+                }
+
+            }
+
+        }
+
+    }
+
+}
