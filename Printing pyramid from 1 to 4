@@ -1,0 +1,52 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        int coloane = 8;
+        int randuri = 4;
+        int i;
+        int j;
+
+        for (i = 1; i <= randuri; i++) {
+            for (j = 1; j <= coloane; j++) {
+                System.out.print(" ");
+                if (i == 1 && j == 4) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 2 && j == 3) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 2 && j == 4) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 3 && j == 2) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 3 && j == 3) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 3 && j == 4) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 4 && j == 1) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 4 && j == 2) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 4 && j == 3) {
+                    System.out.print(i);
+                    continue;
+                } else if (i == 4 && j == 4) {
+                    System.out.print(i);
+                    continue;
+                }
+
+                if (j == coloane) {
+                    System.out.println();
+
+                }
+            }
+        }
+    }
+}
